@@ -71,7 +71,7 @@ public class Controller {
                 btoEnviar.setDisable(true);
                 if(!txtFile.getText().equals("") && !txtCorreo.getText().equals("") && !txtPassword.getText().equals("")){
                     String[] columnas = {"PUNTARENAS AL ROBLE","PUNTARENAS A ESPARZA","ROBLE A PUNTARENAS","ROBLE A ESPARZA","ESPARZA A PUNTARENAS","ESPARZA AL ROBLE"};
-                    String[] dest = {"robleFraiche@gmail.com","esparzaFraiche@gmail.com","puntarenasFraiche@gmail.com","esparzaFraiche@gmail.com","puntarenasFraiche@gmail.com","robleFraiche@gmail.com"};
+                    String[] dest = {"puntarenasFraiche@gmail.com","puntarenasFraiche@gmail.com","robleFraiche@gmail.com","robleFraiche@gmail.com","esparzaFraiche@gmail.com","esparzaFraiche@gmail.com"};
                     int[] column = {4,8,12,16,20,24};
                     for(int i =0; i<column.length;i++){
                         ArrayList<Traspaso> traspasos = Excel.leerExcel(new File(txtFile.getText()),column[i]);
